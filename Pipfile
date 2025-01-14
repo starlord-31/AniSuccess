@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+flake8 = "*"
+
+[packages]
+flask = "*"
+gunicorn = "*"
+xgboost = "==2.1.2"
+scikit-learn = "==1.5.2"
+numpy = "*"
+pandas = "*"
+
+[requires]
+python_version = "3.10"
