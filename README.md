@@ -108,4 +108,38 @@ Test the API locally using this script:
    ```bash
    git clone git@github.com:starlord-31/AniSuccess.git
    cd AniSuccess
+   
+2. **Install Dependencies**  
+   Use `pipenv` to install the required libraries and activate the environment:
+   ```bash
+   pipenv install
+   pipenv shell
+   
+3. **Train the Model (Optional)**
+   If you want to retrain the model, execute the following command:
+   ```bash
+   python train.py
+   
+4. **Run the API**
+   Start the Flask app using Gunicorn:
+   ```bash
+   gunicorn --bind 0.0.0.0:9696 predict:app
 
+5. **Test the API**
+   Use the provided test script to send a request to the API:
+   ```bash
+   python predict_test.py
+
+## Using Docker
+
+1. **Build the Docker Image**
+   To simplify deployment, the project includes a Dockerfile. Build the Docker image using:
+   ```bash
+   docker build -t anime-success-predictor .
+
+2. **Run the Docker Container**
+   Run the container using the following command:
+   ```bash
+   docker run -it --rm -p 9696:9696 anime-success-predictor
+
+The API will be accessible at [http://localhost:9696/predict](http://localhost:9696/predict).
