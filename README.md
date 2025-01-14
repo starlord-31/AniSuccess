@@ -1,5 +1,7 @@
-# AniSuccess
-
+<div align="center">
+  <h1>AniSuccess</h1>
+  <img src="https://images3.alphacoders.com/132/thumb-1920-1323165.png" alt="Anime Theme">
+</div>
 The **AniSuccess** project uses machine learning to predict whether an anime will be successful based on features like genre, studio, rating, and more. Success is defined by factors such as high ratings, popularity, and audience engagement.
 
 This tool is designed for anime studios, streaming platforms, and fans to understand what drives success in anime. It includes:
